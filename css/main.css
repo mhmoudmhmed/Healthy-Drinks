@@ -1,0 +1,238 @@
+/*----------import--------*/
+@import url('./reset.css');
+@import url('./animate.css');
+@import url('./font-awesome.min.css');
+@import url('./bootstrap.min.css');
+/*----------end--------*/
+body {
+  font-family: 'Cairo', sans-serif;
+}
+
+/* navbar */
+
+nav .navbar-brand {
+  font-family: 'Zhi Mang Xing', cursive;
+  color: #f8aa2a !important;
+  font-size: 35px;
+}
+
+nav .navbar-toggler .fa-bars:before{
+  color: #f8aa2a;
+}
+
+.login-navbar {
+  width: 100%;
+  background-color: #fff !important;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link.active{
+  color: #fff;
+}
+
+.menu-fixed {
+  position: fixed;
+  top: -1px;
+  z-index: 9999 !important;
+  width: 100%;
+  background-color: #fff !important;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
+}
+
+.menu-fixed .navbar-nav .nav-link,
+.menu-fixed .navbar-nav .nav-link.active,
+.login-navbar .navbar-nav .nav-link,
+.login-navbar .navbar-nav .nav-link.active{
+  color: #000;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.menu-fixed .navbar-nav .nav-link:hover,
+.login-navbar .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #f8aa2a;
+  opacity: 0.8;
+}
+
+.menu-fixed .navbar-nav .nav-link:focus,
+.login-navbar .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: #f8aa2a;
+}
+
+nav form .btn {background-color: #000; border: 1px solid #000;transition: all 0.45s ease; color: #fff;}
+
+nav form .btn:hover {background-color: #f8aa2a; border: 1px solid #f8aa2a; color: #fff;}
+
+/*----------end
+.portfolio .image img {
+  height: 90vh;
+  animation: mover 1s infinite alternate;
+  width: 100%;
+}
+--------*/
+
+/*----------portfolio--------*/
+.portfolio {
+  padding: 50px;
+  background-image: url('../img/healthy\ drinks\ image\ 1.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  min-height: 600px;
+  position: relative;
+  text-align: center;
+}
+
+.portfolio:after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  content: '';
+  z-index: 0;
+  opacity: .6;
+}
+
+
+.portfolio h2 {font-size: 45px;letter-spacing: 1px;line-height: 62px; color: #fff;}
+
+.portfolio h2 span {color: #f8aa2a;}
+
+.portfolio p {font-size: 18px;color: #fff;line-height: 29px;}
+
+.portfolio .text-head {
+  line-height: 26px;
+  padding: 10.5rem 13rem;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 1;
+}
+
+.portfolio .button .android,
+.portfolio .button .amazon {margin-right: 10px; margin-bottom: 10px;}
+
+.portfolio .button .android,
+.portfolio .button .amazon:hover {
+  border: 1px solid #f8aa2a;
+  color: #f8aa2a;
+  background-color: transparent;
+}
+
+.portfolio .button .android:hover,
+.portfolio .button .amazon{
+  background-color: #f8aa2a!important;
+  border: 1px solid #f8aa2a!important;
+  color: #fff!important;
+  box-shadow: 0 3px 5px 0 rgba(47,85,212,.3);
+}
+
+/*----------end--------*/
+
+/* feature */
+.app-feature {
+  background-color: #f8f9fc;
+  padding: 100px 0;
+  position: relative;
+}
+
+.app-feature .text {margin: auto; margin-bottom: 60px;}
+
+.app-feature .text h2 {
+  font-size: 35px;
+  letter-spacing: .8px;
+}
+
+.app-feature .text p {
+  max-width: 600px;
+  color: #8492a6;
+  margin: auto;
+}
+
+.app-feature .text p span  {color: #f8aa2a;}
+
+.app-feature .feature-table .fa {
+  font-size: 24px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  background: #edf0fb;
+  color: #f8aa2a;
+}
+
+.app-feature .feature-table h4 {
+  font-size: 18px;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.app-feature .feature-table p {color: #8492a6;}
+
+/*----------end--------*/
+
+/*---------- category --------*/
+
+.category {
+  padding-top: 40px;
+}
+
+.category .images {text-align: center; position: relative;padding: 30px 0;}
+
+.category .images img {
+  width: 100%;
+  height: 300px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category p {font-size: 18px; color: #000; font-weight: bold;}
+
+
+/*----------end--------*/
+
+/* Footer */
+
+.footer {
+  padding-top: 25px;
+  margin-top: 20px;
+  padding-bottom: 5px;
+}
+
+.footer .site-info {margin: auto;}
+
+.footer .site-info img {width: 10%;}
+
+.footer .logo {margin: 30px 0;}
+
+.footer .logo img {width: 15%;}
+
+.footer .list-icon li {
+  display: inline;
+  border-radius: 50%;
+  background-color: #ccc;
+  padding: 0px 11px;
+  font-size: 22px;
+  margin: 0 5px;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.footer .list-icon li:hover {opacity: .8;}
+
+.footer .list-icon li a {text-decoration: none; color: #fff;}
+
+.footer .copy-right {margin-bottom: 0;}
+
+.footer .copy-right p {font-weight: bold;}
+
+.footer .copy-right p a {text-decoration: none; color: #f8aa2a; transition: all 0.3s ease;}
+
+.footer .copy-right p a:hover {opacity: .7;}
+
+/*----------end--------*/
